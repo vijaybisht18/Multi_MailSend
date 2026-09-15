@@ -3,7 +3,7 @@ import smtplib as sm
 mail = sm.SMTP('smtp.gmail.com',587)
 mail.ehlo()
 mail.starttls()
-mail.login('vijaybisht18122002@gmail.com','bnwysrpuofsjgcps')
+mail.login('vijaybisht18122002@gmail.com','your_google_passkey')
 
 subject= "First Message"
 
