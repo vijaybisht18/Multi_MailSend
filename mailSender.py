@@ -6,7 +6,7 @@ mail = sm.SMTP("smtp.gmail.com",587)
 mail.ehlo()
 mail.starttls()
 
-mail.login('vijaybisht18122002@gmail.com','cxnvnwhtewglvenq')
+mail.login('vijaybisht18122002@gmail.com','app_passkey')
 
 emails = ["vijaysinghbisht18122002@gmail.com",
         "mahendersingh18122002@gmail.com",
