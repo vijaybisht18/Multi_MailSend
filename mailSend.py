@@ -3,13 +3,14 @@ import smtplib as sm
 mail = sm.SMTP('smtp.gmail.com',587)
 mail.ehlo()
 mail.starttls()
-mail.login('vijaybisht18122002@gmail.com','your_google_passkey')
+mail.login('vijaybisht18122002@gmail.com','bnwysrpuofsjgcps')
 
-subject= "First Message"
+subject= "Regrading Job Oppurnuty"
 
 body= """Hey Vijay Bisht,
 
-Keep Doing Coding
+I am from your future and I want to say that you're doing great things.
+You have a successful life and you have achieved everything you wanted.
 """
 
 address = ['vijaysinghbisht18122002@gmail.com',
@@ -29,6 +30,17 @@ Subject: {subject}
         recipient,
         message
     )
+
+    
+#for emails in address:
+ #   message = f"""From: vijaybisht18122002@gmail.com
+  #              To: {emails}
+   #             Subject: {subject} 
+    #            
+     #           {body}"""
+
+    #mail.sendmail('vijaybisht18122002@gmail.com',emails,message)
+
 
 
 print("Mail Sent Successfully")
