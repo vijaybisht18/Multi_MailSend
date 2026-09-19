@@ -1,2 +1,2 @@
 # Multi_MailSend
-We can send mail to multiple gmail account
+We can send multiple mails in one go.
