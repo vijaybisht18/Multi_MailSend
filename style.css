@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: white;
+    font-family: "Courier New", monospace;
+    color: #222;
+}
+
+.page {
+    width: 100%;
+    max-width: 800px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 10px 15px 25px;
+    border-left: 5px solid #bdbdbd;
+    border-right: 5px solid #bdbdbd;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #3f7ff0;
+}
+
+.divider {
+    border-top: 3px dashed #222;
+    margin: 10px 0 12px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.55fr;
+    gap: 100px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 3px solid #333;
+    border-radius: 2px;
+    background: white;
+    font-family: "Courier New", monospace;
+    font-size: 15px;
+    color: #222;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #3f7ff0;
+}
+
+.sender-field input,
+.password-field input {
+    height: 29px;
+    padding: 3px 10px;
+}
+
+.recipients-field {
+    margin-top: 12px;
+}
+
+.recipients-field textarea {
+    height: 433px;
+    padding: 35px 7px 7px;
+    resize: none;
+}
+
+.password-field {
+    margin-bottom: 58px;
+}
+
+.subject-field textarea {
+    height: 66px;
+    resize: none;
+    padding: 8px;
+}
+
+.message-field {
+    margin-top: 7px;
+}
+
+.message-field textarea {
+    height: 238px;
+    resize: none;
+    padding: 8px;
+}
+
+.attachment-field {
+    margin-top: 12px;
+}
+
+.attachment-field input {
+    width: 163px;
+    height: 20px;
+    border: 3px solid #333;
+    padding: 0;
+    font-size: 10px;
+}
+
+.send-button {
+    display: block;
+    width: 216px;
+    height: 33px;
+    margin: 16px auto 0;
+    background: white;
+    border: 3px solid #333;
+    border-radius: 2px;
+    font-family: "Courier New", monospace;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background: #f1f1f1;
+}
+
+/* Success popup */
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background: white;
+    padding: 30px 50px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+}
+
+.popup h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.popup h3 {
+    margin: 10px 0 20px;
+}
+
+.popup button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .page {
+        border: none;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .password-field {
+        margin-bottom: 0;
+    }
+
+    .recipients-field textarea {
+        height: 220px;
+    }
+
+    .message-field textarea {
+        height: 180px;
+    }
+}
